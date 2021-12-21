@@ -1,0 +1,69 @@
+body { 
+  background-image: url("brick.jpeg"); 
+  /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), rgba(221,194,194,0.4)); */
+}
+
+
+#footer{
+  position:fixed; /**/
+  width: 100%;
+  text-align: left;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255,0.4);
+  height: 11%;
+  color:rgb(0, 0, 0);
+  margin: 6px;
+  padding-left: 6x;
+}
+
+
+#header{
+  position: left;
+  top: 0;
+  top: 0;
+  width: 95%;
+  text-align: right;
+  place-content: left;
+  height: 5%;
+  margin: 6px 0;
+  font-size: 25px;
+
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  position: center;
+  /* border: 1px solid red; */
+}
+
+.column{
+  flex: 30%;
+  max-width: 70%;
+}
+
+.column img {
+  margin-top: 5%;
+  vertical-align: middle;
+  width: 70%;
+  height: 100%;
+  max-width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    padding-top: 5%;
+    max-width: 100%;
+  }
+} 
